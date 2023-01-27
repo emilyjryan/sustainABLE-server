@@ -1,6 +1,6 @@
 # sustainABLE 
 
-Its no secret, the world as we have know it, for the entirity of human existance, is in the midst of the of the most rapid period of change humans have ever seen. No other time in history has the world experienced such rapid change from a single organism, humans. We are poluting the oceans, tearing down the forest, and adding green house gasses to the atmosphere. We are seeing the effects of this activity now, with global tempurature on the rise, the polar icecaps are melting, oceanic storms are more frequent and stronger than we have ever seen. No where on earth is safe as even the most remote locations on the planet bear the mark of human society. Our reach and impact on the world is at the tipping point and if we as a global society dont start making changes the Earth very well may never be the same.  
+It's no secret: our world is facing the most rapid period of environmental change in history. Pollution, deforestation, and greenhouse gas emissions are all on the rise due to human activity.  Our reach and impact on the world is at the tipping point and if we as a global society dont start making changes the Earth very well may never be the same.  
 
 There is good news though, we have the power to change this. Small changes can make a big difference and we are ABLE to make an impact when we work together for a common goal. 
 
