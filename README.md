@@ -33,14 +33,14 @@ The sustainABLE app provideds a community to like minded individuals who what to
 
 * Users can create account with email and password
 * Users can sign into their accounts
-* Users can change their password
 * Users can create new habits, filling out a form
 * Users can favorite habits
-* Users can delete habits
 
 # Stretch Goals
 
-* Add comments to habits
+* Users can add comments to habits
+* Users can update their password
+* Users can delete a favorite habit
 * Add a category dropdown to the new habit form
 * Adding up overall impact of favorited habits
 * More stats to the intro!!
