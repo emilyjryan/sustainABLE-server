@@ -10,15 +10,15 @@ The sustainABLE app provideds a community to like minded individuals who what to
 
 # ERDs
 
-![Getting Started](./imgs/ERD.png)
+![Getting Started](./pics/ERD.png)
 
 # Restful Routing Chart
 
-![Getting Started](./imgs/RRC.png)
+![Getting Started](./pics/RRC.png)
 
 # Wireframes of all user views
 
-![Getting Started](./imgs/Wireframes.png)
+![Getting Started](./pics/Wireframes.png)
 
 # User Stories
 
