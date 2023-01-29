@@ -24,5 +24,4 @@ const HabitSchema = new mongoose.Schema({
 }
 )
 
-
 module.exports = mongoose.model('Habit', HabitSchema)
