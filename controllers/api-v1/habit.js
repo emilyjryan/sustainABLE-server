@@ -16,26 +16,57 @@ router.get('/', async (req, res) => {
         res.status(500).json({ msg: 'Interval Server Error, Contact the System Administrator' })
     }
 })
+// GET /habits/:id -- show route
+router.get('/:id', async (req, res) => {
+    try {
+        const habitDetails = await db.Habit.findById(req.params.id)
+        if (!habit) {
+            res.status(404).json({ msg: 'Habit not found' })
+            return 
+        }
+        res.json({ habitDetails })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({ msg: 'Server Error' })
+    }
+})
 
-// GET/habits/:id -- get habit by :id
-// router.get('/:id', async (req, res) => {
-//     try {
-//         const habit = await db.Habit.findById(req.params.id)
-//         if (!habit) {
-//             res.status(404).json({ msg: "not found" })
-//             return
-//         }
-//         res.json(habit)
-//     } catch (err) {
-//         console.log(err)
-//         if (err.kind === "ObjectId") {
-//             res.status(404).json({ msg: err.message })
-//         } else {
-//             res.status(500).json({ msg: 'Interval Server Error, Contact the System Administrator' })
-//         }
-//     }
-//  })
+// POST /habits -- create route
+router.post('/', async (req, res) => {
+    try {
+        const newHabit = await db.Habit.create(req.body)
+        res.json({ newHabit })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({ msg: 'Server Error' })
+    }
+})
 
+// GET /habits/:id -- show route
+router.get('/:id', async (req, res) => {
+    try {
+        const habitDetails = await db.Habit.findById(req.params.id)
+        if (!habit) {
+            res.status(404).json({ msg: 'Habit not found' })
+            return 
+        }
+        res.json({ habitDetails })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({ msg: 'Server Error' })
+    }
+})
+
+// POST /habits -- create route
+router.post('/', async (req, res) => {
+    try {
+        const newHabit = await db.Habit.create(req.body)
+        res.json({ newHabit })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({ msg: 'Server Error' })
+    }
+})
 
 // exporting router
 module.exports = router
