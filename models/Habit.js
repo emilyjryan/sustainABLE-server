@@ -1,4 +1,3 @@
-// require mongoose 
 const mongoose = require ('mongoose')
 
 const HabitSchema = new mongoose.Schema({
@@ -24,6 +23,5 @@ const HabitSchema = new mongoose.Schema({
     timestamps: true
 }
 )
-
 
 module.exports = mongoose.model('Habit', HabitSchema)

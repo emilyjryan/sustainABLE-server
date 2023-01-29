@@ -29,7 +29,8 @@ app.get('/', myMiddleware, (req, res) => {
 })
 
 // controllers
-app.use('/api-v1/users', require('./controllers/api-v1/users.js'))
+app.use('/users', require('./controllers/api-v1/users.js'))
+app.use('/habit', require('./controllers/api-v1/habit'))
 
 // hey listen
 app.listen(PORT, () => {
