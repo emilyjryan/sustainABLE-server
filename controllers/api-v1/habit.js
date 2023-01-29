@@ -42,31 +42,5 @@ router.post('/', async (req, res) => {
     }
 })
 
-// GET /habits/:id -- show route
-router.get('/:id', async (req, res) => {
-    try {
-        const habitDetails = await db.Habit.findById(req.params.id)
-        if (!habit) {
-            res.status(404).json({ msg: 'Habit not found' })
-            return 
-        }
-        res.json({ habitDetails })
-    } catch (err) {
-        console.log(err)
-        res.status(500).json({ msg: 'Server Error' })
-    }
-})
-
-// POST /habits -- create route
-router.post('/', async (req, res) => {
-    try {
-        const newHabit = await db.Habit.create(req.body)
-        res.json({ newHabit })
-    } catch (err) {
-        console.log(err)
-        res.status(500).json({ msg: 'Server Error' })
-    }
-})
-
 // exporting router
 module.exports = router

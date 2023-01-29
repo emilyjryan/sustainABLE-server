@@ -19,7 +19,6 @@ db.on('error',  err => {
   console.error(`🔥 Datacenter burned down:\n${err}`)
 })
 
-
 module.exports = {
   User: require('./User'),
   Habit: require('./Habit')
