@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const habitDetails = await db.Habit.findById(req.params.id)
-        if (!habit) {
+        if (!habitDetails) {
             res.status(404).json({ msg: 'Habit not found' })
             return 
         }
