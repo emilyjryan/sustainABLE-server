@@ -33,4 +33,4 @@ const habitCrud = async () => {
         console.log(err);
     }
 }
-habitCrud()
+// habitCrud()

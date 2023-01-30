@@ -10,7 +10,11 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String
-  }
+  },
+  favHabits: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Habit'
+  }]
 }, {
   timestamps: true
 })
