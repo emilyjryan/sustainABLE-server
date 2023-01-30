@@ -27,12 +27,12 @@ router.get('/:id', async (req, res) => {
         res.json({ habitDetails })
     } catch (err) {
         console.log(err)
-        res.status(500).json({ msg: 'Server Error' })
+        res.status(500).json({ msg: 'habit details Server Error' })
     }
 })
 
 // POST /habits -- create route
-router.post('/', async (req, res) => {
+router.post('/new', async (req, res) => {
     try {
         const newHabit = await db.Habit.create(req.body)
         res.json({ newHabit })
