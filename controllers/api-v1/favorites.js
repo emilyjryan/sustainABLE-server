@@ -6,3 +6,5 @@ const db = require('../../models')
 // ROUTES
 
 // POST /favorites -- add a favorite to the users favHabits array
+
+module.exports = router
