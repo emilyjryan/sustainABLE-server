@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
         res.status(500).json({ msg: 'Interval Server Error, Contact the System Administrator' })
     }
 })
-// GET /habits/:id -- show route
+// GET /habits/:id -- show habit details
 router.get('/:id', async (req, res) => {
     try {
         const habitDetails = await db.Habit.findById(req.params.id)
@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
 })
 
 // POST /habits -- create route
-router.post('/', async (req, res) => {
+router.post('/new', async (req, res) => {
     try {
         const newHabit = await db.Habit.create(req.body)
         res.json({ newHabit })
@@ -41,6 +41,7 @@ router.post('/', async (req, res) => {
         res.status(500).json({ msg: 'Server Error' })
     }
 })
+
 
 // exporting router
 module.exports = router
