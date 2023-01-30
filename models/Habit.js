@@ -2,22 +2,16 @@ const mongoose = require ('mongoose')
 
 const HabitSchema = new mongoose.Schema({
     habit: {
-        type: String
+        type: String, 
+        required: true
     },
     description: {
-        type: String
-    },
-    purpose: {
-        type: String
-    },
-    impact: {
-        type: String
-    },
-    timeSpent: {
-        type: Number
+        type: String,
+        required: true
     },
     imgURL: {
-        type: String
+        type: String,
+        required: true
     }
 }, {
     timestamps: true
