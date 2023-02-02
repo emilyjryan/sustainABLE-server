@@ -10,13 +10,18 @@ const authLockedRoute = require('./authLockedRoute')
 router.post('/', authLockedRoute, async (req, res) => {
     try {
         const user = res.locals.user
-        if (!req.body.id) {
+        let foundId = req.body.id
+        // foundId = db.Types.ObjectId(foundId)
+        console.log('found id', foundId)
+        if (!foundId) {
             res.status(404).json({ msg: 'Habit not found' })
             return
         }
-        user.favHabits.push(req.body.id)
+
+        user.favHabits.push(foundId)
         await user.save()
         res.sendStatus(201)
+
     } catch (err) {
         console.log(err)
         res.status(500).json({ msg: 'Server Error' })
